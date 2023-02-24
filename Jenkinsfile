@@ -7,8 +7,7 @@
     stages {
         stage('Build') {
             steps {
-                sh "cd ./web-app-jenkins-demo"
-                sh 'dotnet build'
+                sh "dotnet build web-app-jenkins-demo/web-app-jenkins-demo.csproj"
                 echo "Building..."
             }
         }
